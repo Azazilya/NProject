@@ -48,7 +48,7 @@ public:
     virtual string getName() const { return wrapped->getName(); }
     virtual int getHealth() const { return wrapped->getHealth(); }
     virtual void setHealth(int h) { wrapped->setHealth(h); }
-    virtual Character* removeEffect() { return wrapped; } // default: remove lapisan ini
+    virtual Character* removeEffect() { return wrapped; }
     virtual ~CharacterDecorator() { delete wrapped; }
 };
 
