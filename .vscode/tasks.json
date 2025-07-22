@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build C++ with C++11",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+          "-std=c++11",
+          "-Wall",
+          "-Wextra",
+          "-g3",
+          "${file}",
+          "-o",
+          "${fileDirname}/output/miniproject2"
+              ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Compile C++ file with C++11 standard"
+    }
+  ]
+}
